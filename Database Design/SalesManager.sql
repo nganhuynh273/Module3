@@ -33,5 +33,12 @@ pPrice DOUBLE
 );
 
 
+INSERT INTO `quanlybanhang`.`customer` (`cName`, `cAge`) 
+VALUES ('tung', '24');
 
+SELECT oId, pId, odQTY 
+FROM orderdetail;
+
+INSERT INTO `quanlybanhang`.`orderdetail` (oId, pId, odQTY)
+VALUES(12,12,23);
 

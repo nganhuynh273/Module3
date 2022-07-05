@@ -10,12 +10,12 @@ Status    BIT
 );
 
 CREATE TABLE Student(
-StudentId INT           NOT NULL AUTO_INCREMENT PRIMARY KEY,
+StudentId   INT           NOT NULL AUTO_INCREMENT PRIMARY KEY,
 StudentName VARCHAR(30) NOT NULL,
-Adress VARCHAR(50),
-Phone VARCHAR(20),
-Status BIT,
-ClassId INT NOT NULL,
+Adress      VARCHAR(50),
+Phone       VARCHAR(20),
+Status      studentBIT,
+ClassId     INT NOT NULL,
 FOREIGN KEY (ClassId) REFERENCES Class (ClassID)
 );
 
